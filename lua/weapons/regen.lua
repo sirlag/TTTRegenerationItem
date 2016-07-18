@@ -38,4 +38,8 @@ hook.Add("TTTOrderedEquipment", "OrderedARegenItem", function(ply)
 end)
 
 -- This Hook makes sure that the regen item is removed from all players inventories.
-hook.Add( "TTTPrepareRound", "ResetTheHeathRegenItemBeauseISuckAtThis", for k,v in pairs(player.GetAll()) do v.hasregen = false	end )
+hook.Add( "TTTPrepareRound", "ResetTheHeathRegenItemBeauseISuckAtThis", function()
+ 	for k,v in pairs(player.GetAll()) do
+		 v.hasregen = false
+	end
+end )
