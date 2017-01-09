@@ -1,0 +1,7 @@
+"UnlitGeneric"
+{
+ "$basetexture" "VGUI/ttt/sirlag_regeneration"
+ "$vertexcolor" 1
+ "$vertexalpha" 1
+ "$translucent" 1
+}
